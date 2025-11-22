@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
+    <link rel="javascript" href="src/App.jsx" />
+    <title>new-project</title>
+  </head>
+  <body>
+    <div id="root">
+    <script type="text/label" src="src/App.jsx"></script>
+<!--This is navbar section-->
+    <navbar>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="navbar">
+        <div class="logo">
+          <img src="components/free-logo.svg" alt="Logo" width="50px" />
+        </div>
+      </div>
+      <div class="navbar">
+        <div><a class="navbarelement" href="pages/projects.html">Projects</a></div>
+        <div><a class="navbarelement" href="pages/about.html">About</a></div>
+        <div><a class="navbarelement" href="/contact">Connect</a></div>
+      </div>
+      </div>
+    </navbar>
+    <hr style="height:2px;border-width:0;color:gray;background-color:red; margin-bottom:50px;">
+<!--This is content Section-->
+    <div class="content">
+      <div class="textcontent">
+        <h4>Hi there,</h4>
+        <h1 id="h1" class="h1">Welcome!</h1>
+        <script>
+          const heading = document.querySelector("h1");
+          function changetext(){
+            document.getElementById("h1").innerText="hello world";
+          }
+          function reverttext(){
+            document.getElementById("h1").innerText="Welcome!";
+          }
+          heading.addEventListener("mouseover",changetext);
+          heading.addEventListener("mouseout",reverttext)
+        </script>
+      </div>
+      <img class="myimage" src="components/My Photo.jpg" alt="My Photo"/>
+    </div>
+<!--This is footer section-->
+    <hr style="height:2px;border-width:0;color:gray;background-color:red; margin-top:50px;">
+    <div class="socialmedia">
+      <div><a  href="https://www.facebook.com/"><img class="socialmediaelement" src="components/facebook-5-128.jpg" width="20%"></a></div>
+      <div><a  href="https://www.twitter.com/"><img class="socialmediaelement" src="components/twitter-128.jpg" width="20%"></a></div>
+      <div><a  href="https://www.instagram.com/"><img class="socialmediaelement" src="components/instagram-2-128.jpg" width="20%"></a></div>
+    </div>
+    </div>
+  </body>
+</html>
